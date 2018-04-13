@@ -26,7 +26,11 @@ function recognize(register) {
 		console.log("launch button clicked");
         var user = $("#user").val();
         var pass = $("#pass").val();
-    if(user=='') alert("Please enter your username.");
+    if(user=='') navigator.notification.alert(
+    'Please enter your Username!',  // message
+    'Username error',            // title
+    'Done'                  // buttonName
+);
  if(pass=='') alert("Please enter your password."); 
         console.log(register[0].Username);
         var j = 0;
